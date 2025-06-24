@@ -12,10 +12,23 @@ import { FetchRecentModelsService } from "./service/fetch-recent-models.service"
 import { GetModelByIdService } from "./service/get-model-by-id.service";
 import { ModelsRepository } from "./repository/models.repository";
 
-
 @Module({
-  imports: [],
-  controllers: [CreateModelController, DeleteModelController, EditModelController, FetchRecentModelsController, GetModelByIdController],
-  providers: [PrismaService, CreateModelService, DeleteModelService, EditModelService, FetchRecentModelsService, GetModelByIdService, ModelsRepository],
+	imports: [],
+	controllers: [
+		CreateModelController,
+		DeleteModelController,
+		EditModelController,
+		FetchRecentModelsController,
+		GetModelByIdController,
+	],
+	providers: [
+		PrismaService,
+		CreateModelService,
+		DeleteModelService,
+		EditModelService,
+		FetchRecentModelsService,
+		GetModelByIdService,
+		ModelsRepository,
+	],
 })
 export class ModelModule {}
