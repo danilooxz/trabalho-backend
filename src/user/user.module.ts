@@ -9,7 +9,7 @@ import { CreateUserService } from "./service/create-user.service";
 import { DeleteUserService } from "./service/delete-user.service";
 import { EditUsersService } from "./service/edit-user.service";
 import { GetUserByIdService } from "./service/get-user-by-id.service";
-import { UpdateProfileUserService } from "./service/update-profile-user.service";
+import { UpdateProfileUserService } from "./service/update-profile-user.services";
 import { PrismaService } from "src/prisma.service";
 import { UserRepository } from "./repository/users.repository";
 import { ProfileRepository } from "src/profile/repository/profile.repository";
@@ -36,6 +36,7 @@ import { GetOrderByUserIdService } from "./service/get-orders-by-id-user.service
 		UserRepository,
 		ProfileRepository,
 		GetOrderByUserIdService,
+		
 	],
 })
 export class UserModule {}

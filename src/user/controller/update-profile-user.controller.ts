@@ -1,7 +1,7 @@
 import { Body, Controller, HttpCode, Patch, Put } from "@nestjs/common";
 import { ZodValidationPipe } from "src/pipes/zod-validation-pipe";
 import { z } from "zod";
-import { UpdateProfileUserService } from "../service/update-profile-user.service";
+import { UpdateProfileUserService } from "../service/update-profile-user.services";
 
 
 const updateProfileUserBodySchema = z.object({
